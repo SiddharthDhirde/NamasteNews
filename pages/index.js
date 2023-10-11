@@ -1,3 +1,4 @@
+import next from "next";
 import Head from "next/head";
 import { Fragment } from "react";
 

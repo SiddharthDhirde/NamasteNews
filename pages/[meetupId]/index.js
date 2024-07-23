@@ -49,7 +49,7 @@ export async function getStaticProps(context) {
   const meetupsCollection = db.collection("meetups");
 
   const selectedMeetup = await meetupsCollection.findOne({
-    _id: ObjectId(meetupId),
+    _id: new ObjectId(meetupId),
   });
 
   client.close();

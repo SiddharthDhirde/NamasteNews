@@ -26,10 +26,10 @@ function NewMeetupPage() {
   return (
     <Fragment>
       <Head>
-        <title>Add New Meetup</title>
+        <title>Add New News</title>
         <meta
           name="description"
-          content="Add your own Meetup and create amazing networking opportunities"
+          content="Add your own News to let the World know!"
         />
       </Head>
       <NewMeetupForm onAddMeetup={addMeetupHandler} />{" "}

@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NamasteNews
 
-## Getting Started
+NamasteNews is a Next.js project that allows users to share news with the world. This project was created to gain a deeper understanding of Next.js and its features. The application uses MongoDB Atlas as a database for storing news content.
 
-First, run the development server:
+## Table of Contents
+- [Project Description](#project-description)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- [License](#license)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Project Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+NamasteNews is a news-sharing platform where users can add and view news articles. The application consists of three main pages:
+1. **Home Page (All News)**: Displays all the news articles.
+2. **Add New News Page**: Allows users to add new news articles.
+3. **Detail News Page**: A dynamic page that displays the details of a selected news article.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Technologies Used
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Next.js
+- React
+- MongoDB Atlas
+- Node.js
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Setup and Installation
 
-## Learn More
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/SiddharthDhirde/namastenews.git
+    cd namastenews
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Set up your environment variables:
+    Create a `.env.local` file in the root directory and add your MongoDB URI:
+    ```env
+    MONGODB_URI=your_mongodb_atlas_uri
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+    The application will be available at `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions to the project are welcome! If you have any ideas for improvements or feature enhancements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

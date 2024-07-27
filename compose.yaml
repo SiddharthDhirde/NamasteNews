@@ -1,0 +1,27 @@
+services:
+  frontend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - MONGODB_URI=${MONGODB_URI}
+    ports: 
+      - "3000:3000"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+    develop:
+      watch:
+        - path: ./package.json
+          action: rebuild
+        - path: ./next.config.js
+          action: rebuild
+        - path: ./package-lock.json
+          action: rebuild
+        - path: .
+          target: /app
+          action: sync
+    env_file:
+      - .env
+    
+volumes:
+  tasked: 
